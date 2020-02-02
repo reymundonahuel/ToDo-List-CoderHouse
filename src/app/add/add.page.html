@@ -1,0 +1,24 @@
+<ion-fab class="ion-padding" vertical="top" horizontal="start" slot="fixed" [routerLink]="['/home']" routerLinkActive="router-link-active" >
+<ion-fab-button>
+  <ion-icon name="arrow-round-back"></ion-icon>
+</ion-fab-button>
+</ion-fab>
+
+<ion-content class="ion-padding">
+  <div class="padding-desk">
+  <div class="mobile-padding">
+<ion-card class="tarjeta">
+  <ion-card-header>
+    <ion-card-subtitle>Agregale etiqueta y recordatorios</ion-card-subtitle>
+    <ion-card-title>Crear nueva tarea</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+<ion-input type="text" placeholder="Tarea" [(ngModel)]="todo.task"></ion-input>
+<ion-input type="text" placeholder="Etiqueta" [(ngModel)]="todo.tag"></ion-input>
+  </ion-card-content>
+  <ion-button expand="block" color="success" (click)="addItem()" >Agregar!</ion-button>
+</ion-card>
+</div>
+</div>
+  
+</ion-content>

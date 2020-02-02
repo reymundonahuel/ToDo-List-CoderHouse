@@ -75,3 +75,27 @@
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
 }
+
+@font-face {
+  font-family: 'Coolvetica';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/coolvetica.ttf');
+}
+@media (prefers-color-scheme: dark) {
+  ion-list,ion-item{
+      --background: black;
+  }
+  h2{
+      color: white;
+  }
+  p{
+      color:white;
+  }
+  ion-fab-button{
+      --background:#000;
+  }
+
+}
+@media (prefers-color-scheme: light) {
+}

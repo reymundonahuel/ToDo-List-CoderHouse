@@ -1,1 +1,37 @@
 
+ion-content{
+    --background:url('https://picsum.photos/500/800');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.weather{
+    padding-left: 3%;
+    margin-top: -5%;
+}
+.lista{
+    border-radius: 15px;
+}
+.tarjeta{
+    background-color: white;
+ }
+ @media screen and (min-width: 800px) {
+    ion-content{
+        --background:url('https://picsum.photos/1920/1080');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    ion-card{
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+    .padding-desk{
+        display: block;
+      margin-left: 30%;
+      margin-right: auto;
+      width: 80%;
+    }
+   
+}

@@ -1,0 +1,22 @@
+<ion-fab class="ion-padding" vertical="top" horizontal="start" slot="fixed" [routerLink]="['/home']" routerLinkActive="router-link-active" >
+  <ion-fab-button>
+    <ion-icon name="arrow-round-back"></ion-icon>
+  </ion-fab-button>
+  </ion-fab>
+  
+<ion-content class="ion-padding">
+  <div class="padding-desk">
+    <div class="mobile-padding">
+<ion-card class="tarjeta">
+  <ion-card-header>
+    <ion-card-title> {{ todo.task }}</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-input required type="text" placeholder="Tarea" [(ngModel)]="todo.task"></ion-input>
+    <ion-input required type="text" placeholder="Etiqueta" [(ngModel)]="todo.tag"></ion-input>
+  </ion-card-content>
+  <ion-button expand="full" (click)="saveTodo()">Guardar!</ion-button>
+</ion-card>
+</div>
+  </div>
+</ion-content>

@@ -1,0 +1,17 @@
+<ion-content class="ion-padding">
+  <h1 style="color: white; font-family: 'Coolvetica'; font-size:50px;"> <b>ToDo for CoderHouse</b></h1>
+  <div class="padding-desk">
+  <div class="mobile-padding">
+<ion-card class="tarjeta">
+  <ion-card-header>
+    <ion-card-subtitle>Comienza a crear tareas</ion-card-subtitle>
+    <ion-card-title>Iniciar Sesion</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+<ion-input type="email" placeholder="Correo" [(ngModel)]="user.mail"></ion-input>
+<ion-input type="password" placeholder="Contraseña" [(ngModel)]="user.password"></ion-input>
+  </ion-card-content>
+  <ion-button expand="block" color="success" (click)="login(user)" >Iniciar Sesion</ion-button>
+</ion-card>
+</div>
+</div>
